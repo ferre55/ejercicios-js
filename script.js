@@ -35,3 +35,108 @@ const ejercicio2 = [
     esFamiliar: true,
   },
 ];
+
+
+
+
+
+/*
+
+console.log("Arreglo =>", ejercicio1 );
+
+
+
+for(let indice=0; indice< ejercicio1.length;indice++ ){
+  
+  let numero= (ejercicio1[indice]);
+
+  let limite= Math.round(Math.sqrt(numero));
+
+   for(let divisor=2; divisor <= limite; divisor++ ){
+      if(numero % divisor === 0 ){
+       console.log(` no es primo`);
+      }else{
+        console.log(`es primo`);
+      }
+
+      }
+
+
+   }*/
+
+
+/*
+   function isPrime(n){
+    if (n === 0) return false;
+    let limit = Math.round(Math.sqrt(n));
+    for( let i =2; i <= limit; i++){
+      if(n % i === 0) return false;
+    }
+    return true;
+   }
+
+
+   ejercicio1.forEach(function(n){
+    console.log(isPrime(n));
+
+   } ); */
+
+
+
+
+
+
+
+   console.log("\n\n Ejercicio 1\n\n");
+
+/* Dado un arreglo de números enteros, Imprimir solamente 
+aquellos que son denominados números primos, (usar arreglo denominado como "ejercicio1").*/
+  
+
+  
+
+  for(let indice=0; indice< ejercicio1.length;indice++ ){
+  
+    let number= (ejercicio1[indice]);
+  
+
+  let isPrime = true;
+
+  // checar si number is igual a 1
+  if (number === 1) {
+      console.log("1 is neither prime nor composite number.");
+  }
+
+  // checar si number es mayor que 1
+  else if (number > 1) {
+
+      // looping through 2 to number-1
+      for (let i = 2; i < number; i++) {
+          if (number % i == 0) {
+              isPrime = false;
+              break;
+          }
+      }
+
+      if (isPrime) {
+          console.log(`${number} is a prime number`);
+      } else {
+          console.log(`${number} is a not prime number`);
+      }
+  }
+
+  // check if number is less than 1
+  else {
+      console.log("The number is not a prime number.");
+
+  }
+  }
+
+ 
+  
+
+
+
+      
+
+  
