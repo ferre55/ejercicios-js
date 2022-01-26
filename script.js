@@ -146,7 +146,7 @@ aquellos que son denominados números primos, (usar arreglo denominado como "eje
 
   
 
-/* EXAMPLE 2*/
+/* EJERCICIO 2*/
 
 console.log("\n\n Ejercicio 2\n\n");
 
@@ -161,3 +161,26 @@ function fiesta(persona){
 ejercicio2.forEach((persona) => {
   fiesta(persona);
 });
+
+
+/*  EJERCICIO 3*/
+
+console.log("\n\n Ejercicio 3\n\n");
+
+
+/* Con ayuda de ciclos imprime los primeros 50 
+números de la suceción de fibonacci, (1,1,2,3,5,8,13,21).*/
+
+
+
+
+let n1 =1, n2 = 1, siguienteTermino;
+
+console.log('Fibonacci Series:');
+
+for (let i = 1; i <= 50 ; i++) {
+    console.log(n1);
+    siguienteTermino = n1 + n2;
+    n1 = n2;
+    n2 = siguienteTermino;
+}
