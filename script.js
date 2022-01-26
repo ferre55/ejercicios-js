@@ -176,7 +176,7 @@ números de la suceción de fibonacci, (1,1,2,3,5,8,13,21).*/
 
 let n1 =1, n2 = 1, siguienteTermino;
 
-console.log('Fibonacci Series:');
+console.log('suceción de fibonacci:');
 
 for (let i = 1; i <= 50 ; i++) {
     console.log(n1);
