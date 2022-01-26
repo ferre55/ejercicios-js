@@ -134,9 +134,27 @@ aquellos que son denominados números primos, (usar arreglo denominado como "eje
 
  
   
+  console.log("\n\n Ejercicio 2 \n\n");
+
+/*Ramón quiere hacer una fiesta privada en donde solo entre un
+ número exclusivo de personas, ayudale al portero a solo dejar
+  pasar a aquellas personas mayores de edad que sean familiares de Ramón. 
+  (con imprimir los usuarios que se admitirán basta, usar el arreglo denominado 
+    como "ejercicio2") */
 
 
-
-      
 
   
+
+/* EXAMPLE 2*/
+console.log("\n E.g 2 \n")
+
+function fiesta(persona){
+  if(persona.edad>=18 && persona.esFamiliar){
+    console.log(`${persona.nombre} es admitido en la fiesta`);
+  }
+}
+
+ejercicio2.forEach((persona) => {
+  Admitidos(persona);
+});
