@@ -147,7 +147,10 @@ aquellos que son denominados números primos, (usar arreglo denominado como "eje
   
 
 /* EXAMPLE 2*/
-console.log("\n E.g 2 \n")
+
+console.log("\n\n Ejercicio 2\n\n");
+
+
 
 function fiesta(persona){
   if(persona.edad>=18 && persona.esFamiliar){
@@ -156,5 +159,5 @@ function fiesta(persona){
 }
 
 ejercicio2.forEach((persona) => {
-  Admitidos(persona);
+  fiesta(persona);
 });
